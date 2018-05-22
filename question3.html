@@ -33,18 +33,15 @@
 <div class="callout large body">
   <div class="row column text-center content">
     <h1>
-      چند سال دارید؟
+      مدرک تحصیلی‌تان چیست؟
     </h1>
     <p class="lead">
-      <span id="age">
-      </span>
-       سال
     </p>
-    <div class="sliderContainer">
-      <input type="range" min="5" max="150" value="25" class="slider" id="myRange">
-    </div>
-    <a href="fail.html" class="button large warning" id="checkButton">
-      تایید
+    <a href="fail.html" class="button large warning">
+      کارشناسی یا پایین‌تر
+    </a>
+    <a href="question4.html" class="button large warning ">
+      کارشناسی ارشد یا بالاتر
     </a>
   </div>
 </div>
@@ -57,9 +54,9 @@ output.innerHTML = slider.value; // Display the default slider value
 slider.oninput = function() {
     output.innerHTML = this.value;
     if (document.getElementById("age").innerHTML > 27 ) {
-      document.getElementById("checkButton").href="question3.html";
+      document.getElementById("checkButton").href="congrats.html";
     } else {
-      document.getElementById("checkButton").href="fail.html";
+      document.getElementById("checkButton").href="question3.html";
     }
 }
 

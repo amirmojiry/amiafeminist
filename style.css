@@ -5,7 +5,7 @@
 }*/
 
 /*******************************************
-	Basic 
+	Basic
 *******************************************/
 @font-face {
 	font-family: 'sans';
@@ -102,7 +102,7 @@ h1,h2,h3,h4,h5,h6{
 	padding-bottom: 1em;
 }
 
-.congrats p{
+.congrats p, ol, ul{
 	color: #ebebeb;
 	font-size: 1.0em;
 	padding-bottom: 1em;
@@ -178,6 +178,43 @@ a.gplus  {
 a:hover.gplus  {
 	color:  #d34836;
 }
+.sliderContainer {
+	width: 100%;
+}
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.5;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
  /*==========  Non-Mobile First Method  ==========*/
 
     /* Large Devices, Wide Screens */
@@ -213,7 +250,7 @@ a:hover.gplus  {
 
     }
 
-    /* Extra Small Devices, Phones */ 
+    /* Extra Small Devices, Phones */
     @media only screen and (max-width : 480px) {
 
 
@@ -221,6 +258,6 @@ a:hover.gplus  {
 
     /* Custom, iPhone Retina  */
     @media only screen and (max-width : 320px) {
-        
-        
+
+
     }

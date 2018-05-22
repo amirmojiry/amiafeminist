@@ -33,31 +33,31 @@
 <div class="callout large body">
   <div class="row column text-center content">
     <h1>
-      چند سال دارید؟
+      چند سال سابقه کار و بیمه بازنشستگی دارید؟
     </h1>
     <p class="lead">
-      <span id="age">
+      <span id="experience">
       </span>
        سال
     </p>
     <div class="sliderContainer">
-      <input type="range" min="5" max="150" value="25" class="slider" id="myRange">
+      <input type="range" min="0" max="30" value="0" class="slider" id="myRange">
     </div>
-    <a href="fail.html" class="button large warning" id="checkButton">
+    <a href="#" class="button large warning" id="checkButton">
       تایید
     </a>
   </div>
 </div>
 <script>
 var slider = document.getElementById("myRange");
-var output = document.getElementById("age");
+var output = document.getElementById("experience");
 output.innerHTML = slider.value; // Display the default slider value
 
 // Update the current slider value (each time you drag the slider handle)
 slider.oninput = function() {
     output.innerHTML = this.value;
-    if (document.getElementById("age").innerHTML > 27 ) {
-      document.getElementById("checkButton").href="question3.html";
+    if (document.getElementById("experience").innerHTML > 4 ) {
+      document.getElementById("checkButton").href="congrats.html?greater28=1&breaterBS=1&more5years=1";
     } else {
       document.getElementById("checkButton").href="fail.html";
     }

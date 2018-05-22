@@ -47,63 +47,30 @@
       </div>
         <div class="small-12 medium-12 large-12">
           <h1>
-             تبریک می گویم! شما برای ازدواج به اجازه‌ی پدر نیاز ندارید.
+             من برای ازدواج به اجازه‌ی پدر نیاز ندارم. شما چطور؟
           </h1>
         </div>
-        <div class="small-12 medium-12 large-12">
-          <p id="description">
-            <ul>
-              <li>
-                <del id="isMale">
-                  شما پسر هستید.
-                </del>
-              </li>
-              <li>
-                <del id="greater28">
-                  شما بیش از 28 سال سن دارید.
-                </del>
-              </li>
-              <li>
-                <del id="breaterBS">
-                  شما مدرک کارشناسی ارشد یا بالاتر دارید.
-                </del>
-              </li>
-              <li>
-                <del id="more5years">
-                  شما بیش از 5 سال سابقه کار و بیمه‌ی بازنشستگی دارید.
-                </del>
-              </li>
-            </ul>
-          </p>
-        </div>
-        <div class="small-12 medium-12 large-12">
-          <p> نتیجه خود را با دیگران به اشتراک بگذارید: </p>
-          <a href="https://twitter.com/home?status=https://amirmojiry.github.io/doineedmyfatherspermissiontomarry/share-congrats.html" class="twitter"><i class="fa fa-twitter fa-2x"></i></a>
-          <a href="https://www.facebook.com/sharer/sharer.php?u=https://amirmojiry.github.io/doineedmyfatherspermissiontomarry/share-congrats.html" class="facebook"><i class="fa fa-facebook fa-2x"></i></a>
-          <a href="https://plus.google.com/share?url=https://amirmojiry.github.io/doineedmyfatherspermissiontomarry/share-congrats.html" class="gplus"><i class="fa fa-google-plus fa-2x"></i> </a>
-        </div>
+        <a href="index.html" class="button large warning">
+          ببینید
+        </a>
+    <div class="small-12 medium-12 large-12">
+      <p>
+      </p>
+  </div>
     </div>
   </div>
+
+
+
 </div>
 <script>
-var url_string = window.location.href;
-var url = new URL(url_string);
-var isMale = url.searchParams.get("isMale");
-var greater28 = url.searchParams.get("greater28");
-var breaterBS = url.searchParams.get("breaterBS");
-var more5years = url.searchParams.get("more5years");
-if (isMale == 1) {
-  document.getElementById("isMale").outerHTML = document.getElementById("isMale").outerHTML.replace(/del/g, "strong");
-}
-if (greater28 == 1) {
-  document.getElementById("greater28").outerHTML = document.getElementById("greater28").outerHTML.replace(/del/g, "strong");
-}
-if (breaterBS == 1) {
-  document.getElementById("breaterBS").outerHTML = document.getElementById("breaterBS").outerHTML.replace(/del/g, "strong");
-}
-if (more5years == 1) {
-  document.getElementById("more5years").outerHTML = document.getElementById("more5years").outerHTML.replace(/del/g, "strong");
-}
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74782135-1', 'auto');
+  ga('send', 'pageview');
 
 </script>
 </body>
