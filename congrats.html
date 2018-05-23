@@ -46,8 +46,8 @@
     </svg>
       </div>
         <div class="small-12 medium-12 large-12">
-          <h1>
-             تبریک می گویم! شما برای ازدواج به اجازه‌ی پدر نیاز ندارید.
+          <h1 id='congratsH2'>
+             تبریک می گویم! شما برای ازدواج به اجازه‌ی پدر نیاز ندارید زیرا
           </h1>
         </div>
         <div class="small-12 medium-12 large-12">
@@ -64,7 +64,7 @@
                 </del>
               </li>
               <li>
-                <del id="breaterBS">
+                <del id="greaterBS">
                   شما مدرک کارشناسی ارشد یا بالاتر دارید.
                 </del>
               </li>
@@ -90,16 +90,18 @@ var url_string = window.location.href;
 var url = new URL(url_string);
 var isMale = url.searchParams.get("isMale");
 var greater28 = url.searchParams.get("greater28");
-var breaterBS = url.searchParams.get("breaterBS");
+var breaterBS = url.searchParams.get("greaterBS");
 var more5years = url.searchParams.get("more5years");
 if (isMale == 1) {
   document.getElementById("isMale").outerHTML = document.getElementById("isMale").outerHTML.replace(/del/g, "strong");
+} else {
+  document.getElementById("congratsH2").innerHTML = " تبریک می گویم! شما [در صورت تصویب] برای ازدواج به اجازه‌ی پدر نیاز ندارید زیرا";
 }
 if (greater28 == 1) {
   document.getElementById("greater28").outerHTML = document.getElementById("greater28").outerHTML.replace(/del/g, "strong");
 }
 if (breaterBS == 1) {
-  document.getElementById("breaterBS").outerHTML = document.getElementById("breaterBS").outerHTML.replace(/del/g, "strong");
+  document.getElementById("greaterBS").outerHTML = document.getElementById("greaterBS").outerHTML.replace(/del/g, "strong");
 }
 if (more5years == 1) {
   document.getElementById("more5years").outerHTML = document.getElementById("more5years").outerHTML.replace(/del/g, "strong");

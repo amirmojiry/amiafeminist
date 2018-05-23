@@ -43,7 +43,7 @@
     <div class="sliderContainer">
       <input type="range" min="0" max="30" value="0" class="slider" id="myRange">
     </div>
-    <a href="#" class="button large warning" id="checkButton">
+    <a href="fail.html" class="button large warning" id="checkButton">
       تایید
     </a>
   </div>
@@ -57,7 +57,7 @@ output.innerHTML = slider.value; // Display the default slider value
 slider.oninput = function() {
     output.innerHTML = this.value;
     if (document.getElementById("experience").innerHTML > 4 ) {
-      document.getElementById("checkButton").href="congrats.html?greater28=1&breaterBS=1&more5years=1";
+      document.getElementById("checkButton").href="congrats.html?more5years=1";
     } else {
       document.getElementById("checkButton").href="fail.html";
     }
