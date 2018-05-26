@@ -183,6 +183,17 @@ a.gplus  {
 a:hover.gplus  {
 	color:  #d34836;
 }
+
+a.telegram  {
+	color: #fff;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
+a:hover.telegram  {
+	color:  #0088cc;
+}
+
 .sliderContainer {
 	width: 100%;
 }
